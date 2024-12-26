@@ -10,7 +10,7 @@ class HomeViewBody extends StatelessWidget {
     return const Column(
       children: [
         CustomAppBar(),
-        CustomListViewItem(),
+        FeaturedListViewItem(),
         FeaturedBooksListView(),
       ],
     );
@@ -28,7 +28,7 @@ class FeaturedBooksListView extends StatelessWidget {
         itemBuilder: (context, index){
         return const Padding(
           padding: EdgeInsets.symmetric(horizontal: 8),
-          child: CustomListViewItem(),
+          child: FeaturedListViewItem(),
         );
       }),
     );
