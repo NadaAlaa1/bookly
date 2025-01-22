@@ -18,21 +18,35 @@ class ServerFailure extends Failure {
       case DioExceptionType.receiveTimeout:
         return ServerFailure('Receive timeout with ApiServer');
       case DioExceptionType.badCertificate:
-        break;
+        return ServerFailure.fromResponse(
+            dioError.response!.statusCode!, dioError.response!.data);
       case DioExceptionType.badResponse:
-        break;
+        return ServerFailure.fromResponse(
+            dioError.response!.statusCode!, dioError.response!.data);
       case DioExceptionType.cancel:
-        break;
+        return ServerFailure('Request to ApiServer was canceled');
       case DioExceptionType.connectionError:
-        break;
+        return ServerFailure('Connection Error');
       case DioExceptionType.unknown:
-        break;
+        if (dioError.message!.contains('SocketException')) {
+          return ServerFailure('No Internet Connection');
+        }
+        return ServerFailure('Unexpected error, Please try again!');
+
+      default:
+        return ServerFailure('Oops! Something went wrong, Please try again');
     }
   }
 
-  factory ServerFailure.fromResponse(int statusCode, dynamic response){
-    if(statusCode == 400 || statusCode == 401 || statusCode == 403){
-      return ServerFailure(response['error']);
+  factory ServerFailure.fromResponse(int statusCode, dynamic response) {
+    if (statusCode == 400 || statusCode == 401 || statusCode == 403) {
+      return ServerFailure(response['error']['message']);
+    } else if (statusCode == 404) {
+      return ServerFailure('Your request not found, Please try later!');
+    } else if (statusCode == 500) {
+      return ServerFailure('Internal Server Error, Please try later!');
+    } else {
+      return ServerFailure('Oops! Something went wrong, Please try again!');
     }
   }
 }
