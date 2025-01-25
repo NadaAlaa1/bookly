@@ -16,7 +16,9 @@ class BookDetailsSection extends StatelessWidget {
           padding: EdgeInsets.symmetric(
             horizontal: width * .2,
           ),
-          child: const CustomBookImage(),
+          child: const CustomBookImage(
+            imageUrl: 'https://www.picmonkey.com/blog/make-your-own-phone-wallpaper',
+          ),
         ),
         const SizedBox(height: 43),
         Text(
