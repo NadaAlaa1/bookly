@@ -34,7 +34,7 @@ Eye-friendly reading experience
 ## Demo
 
 <div align="center">
-  <img src="assets/images/demo.mp4" alt="Bookly Demo">
+  <img src="assets/images/demo.gif" alt="Bookly Demo">
 </div>
 
 ## Getting Started 🚀
