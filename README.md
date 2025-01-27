@@ -7,8 +7,6 @@
 
 Your personal digital library - Discover, organize, and track your reading journey with Bookly!
 
-![Bookly Showcase](https://via.placeholder.com/1200x400.png?text=Bookly+App+Showcase)
-
 ## Features ✨
 
 📖 **Book Discovery**  
@@ -33,6 +31,12 @@ Comprehensive information including:
 🌓 **Dark Mode**  
 Eye-friendly reading experience
 
+## Demo
+
+<div align="center">
+  <img src="assets/images/demo.mp4" alt="Bookly Demo">
+</div>
+
 ## Getting Started 🚀
 
 ### Prerequisites
@@ -44,7 +48,7 @@ Eye-friendly reading experience
 1. Clone the repository
    ```bash
    git clone https://github.com/NadaAlaa1/bookly.git
-  cd bookly
+   cd bookly
   
 2. Install dependencies
    ```bash
