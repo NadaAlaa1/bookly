@@ -43,22 +43,14 @@ Eye-friendly reading experience
 ### Installation
 1. Clone the repository
    ```bash
-  git clone https://github.com/NadaAlaa1/bookly.git
+   git clone https://github.com/NadaAlaa1/bookly.git
   cd bookly
   
 2. Install dependencies
    ```bash
-  flutter pub get
+   flutter pub get
   
 3. Run the app
   ```bash
-  flutter run
+flutter run
 
-### Project Structure 🗂️
-
-lib/
-├── core/          # Utilities and shared resources
-├── data/          # Data layer implementation
-├── domain/        # Business logic and entities
-├── presentation/  # UI components
-└── main.dart      # Application entry point
