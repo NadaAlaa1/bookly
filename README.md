@@ -42,14 +42,14 @@ Eye-friendly reading experience
 
 ### Installation
 1. Clone the repository
-  ```bash
+   ```bash
   git clone https://github.com/NadaAlaa1/bookly.git
   cd bookly
-
+  
 2. Install dependencies
-  ```bash
+   ```bash
   flutter pub get
-
+  
 3. Run the app
   ```bash
   flutter run
