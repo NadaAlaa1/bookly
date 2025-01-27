@@ -7,8 +7,6 @@
 
 Your personal digital library - Discover, organize, and track your reading journey with Bookly!
 
-![Bookly Demo](assets/images/demo.mp4)
-
 ## Features ✨
 
 📖 **Book Discovery**  
@@ -32,6 +30,12 @@ Comprehensive information including:
 
 🌓 **Dark Mode**  
 Eye-friendly reading experience
+
+## Demo
+
+<div align="center">
+  <img src="assets/images/demo.mp4" alt="Bookly Demo">
+</div>
 
 ## Getting Started 🚀
 
