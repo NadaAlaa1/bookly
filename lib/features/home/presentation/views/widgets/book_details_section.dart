@@ -23,7 +23,7 @@ class BookDetailsSection extends StatelessWidget {
             imageUrl: bookModel.volumeInfo.imageLinks?.thumbnail?? '',
           ),
         ),
-        const SizedBox(height: 43),
+        const SizedBox(height: 25),
         Text(
           bookModel.volumeInfo.title!,
           style: Styles.textStyle30.copyWith(
@@ -40,13 +40,14 @@ class BookDetailsSection extends StatelessWidget {
               fontStyle: FontStyle.italic,
               fontWeight: FontWeight.w500,
             ),
+            textAlign: TextAlign.center,
           ),
         ),
         const SizedBox(height: 18),
         const BookRating(
           mainAxisAlignment: MainAxisAlignment.center,
         ),
-        const SizedBox(height: 37),
+        const SizedBox(height: 27),
         BooksAction(
           bookModel: bookModel,
         ),
