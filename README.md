@@ -7,7 +7,7 @@
 
 Your personal digital library - Discover, organize, and track your reading journey with Bookly!
 
-![Bookly Showcase](https://via.placeholder.com/1200x400.png?text=Bookly+App+Showcase) <!-- Replace with actual screenshots -->
+![Bookly Showcase](https://via.placeholder.com/1200x400.png?text=Bookly+App+Showcase)
 
 ## Features ✨
 
@@ -45,3 +45,20 @@ Eye-friendly reading experience
 ```bash
 git clone https://github.com/NadaAlaa1/bookly.git
 cd bookly
+
+2. Install dependencies
+```bash
+flutter pub get
+
+3. Run the app
+```bash
+flutter run
+
+### Project Structure 🗂️
+
+lib/
+├── core/          # Utilities and shared resources
+├── data/          # Data layer implementation
+├── domain/        # Business logic and entities
+├── presentation/  # UI components
+└── main.dart      # Application entry point
